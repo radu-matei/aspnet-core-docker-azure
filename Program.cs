@@ -13,7 +13,7 @@ namespace ConsoleApplication
                 .UseKestrel()
                 .Configure(app => app.Run(context =>
                     {
-                      return context.Response.WriteAsync($"Hello, CodeCamp! Kubernetes is awesome! It is {DateTime.Now}");
+                      return context.Response.WriteAsync($"Hello, CodeCamp!! It is {DateTime.Now}");
                     }))
                 .Build();
 
