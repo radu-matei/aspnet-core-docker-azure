@@ -13,7 +13,7 @@ namespace ConsoleApplication
                 .UseKestrel()
                 .Configure(app => app.Run(context =>
                     {
-                      return context.Response.WriteAsync($"Kuberneteeees!! It is {DateTime.Now}");
+                      return context.Response.WriteAsync($"Kuberneteeees on Azure!! It is {DateTime.Now}");
                     }))
                 .Build();
 
