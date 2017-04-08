@@ -13,7 +13,7 @@ namespace ConsoleApplication
                 .UseKestrel()
                 .Configure(app => app.Run(context =>
                     {
-                      return context.Response.WriteAsync($"Is this cool?!! It is {DateTime.Now}");
+                      return context.Response.WriteAsync($"Hello, Universe!! It is {DateTime.Now}");
                     }))
                 .Build();
 
