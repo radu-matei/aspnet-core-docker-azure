@@ -13,7 +13,7 @@ namespace ConsoleApplication
                 .UseKestrel()
                 .Configure(app => app.Run(context =>
                     {
-                      return context.Response.WriteAsync($"Kubernetes with Jenkins is awesome, right?!! It is {DateTime.Now}");
+                      return context.Response.WriteAsync($"Kubernetes with Jenkins is awesome, right???!! It is {DateTime.Now}");
                     }))
                 .Build();
 
